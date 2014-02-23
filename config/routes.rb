@@ -1,5 +1,6 @@
 Loom::Application.routes.draw do
   
+  resources :scrapedb
   resources :people
   root 'welcome#index'
   

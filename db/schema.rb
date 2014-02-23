@@ -68,6 +68,12 @@ ActiveRecord::Schema.define(version: 20140223034038) do
     t.datetime "updated_at"
   end
 
+  create_table "processeds", force: true do |t|
+    t.text     "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "roles", force: true do |t|
     t.string   "type"
     t.datetime "created_at"
@@ -84,6 +90,12 @@ ActiveRecord::Schema.define(version: 20140223034038) do
 
   create_table "states", force: true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "unprocesseds", force: true do |t|
+    t.text     "url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
